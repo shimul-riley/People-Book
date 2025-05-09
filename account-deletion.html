@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="account-deletion.css" />
+  <link rel="shortcut icon" href="" type="image/x-icon" />
+  <title>Account Deletion - People Book</title>
+</head>
+<body>
+  
+  <header>
+    <nav>
+      <div class="logo">The <span>Cyborg</span> Dev</div>
+      <div class="menu">
+          <a href="index.html">Home</a>
+          <a href="mailto:thegeniuscoder100@gmail.com">Contact us</a>
+      </div>
+    </nav>
+  </header>
+
+  <section id="account-deletion">
+    <div class="container">
+      <h2>Account Deletion Process</h2>
+      <p>Effective Date: October 2, 2023</p>
+
+      <!-- Row 1 -->
+      <div class="row">
+        <div class="text">
+          <h3>Step 1: Go to Settings</h3>
+          <p>Go to Settings from the side panel of the People Book App.</p>
+        </div>
+        <div class="image">
+          <img src="Images/photo_2025-05-09_15-09-26.jpg" alt="Step 1 Image">
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="row reverse-flex">
+        <div class="image">
+          <img src="Images/photo_2025-05-09_15-09-24.jpg" alt="Step 2 Image">
+        </div>
+        <div class="text">
+          <h3>Step 2: Locate "Delete Account"</h3>
+          <p>Locate and click the Delete Account text in the Settings screen.</p>
+        </div>
+      </div>
+
+      <!-- Row 3 -->
+      <div class="row">
+        <div class="text">
+          <h3>Step 3: Confirm Deletion</h3>
+          <p>Click Delete button on the Confirmation Pop-up.</p>
+        </div>
+        <div class="image">
+          <img src="Images/photo_2025-05-09_15-09-27.jpg" alt="Step 3 Image">
+        </div>
+      </div>
+      
+      <!--
+       Row 4 
+      <div class="row">
+        <div class="image">
+          <img src="path-to-your-image4.jpg" alt="Step 4 Image">
+        </div>
+        <div class="text">
+          <h3>Step 4: Account Deletion Completed</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Morbi vel mauris sit amet ligula consequat cursus.</p>
+        </div>
+      </div>
+
+       Row 5 
+      <div class="row">
+        <div class="text">
+          <h3>Step 5: Confirmation</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Morbi vel mauris sit amet ligula consequat cursus.</p>
+        </div>
+        <div class="image">
+          <img src="path-to-your-image5.jpg" alt="Step 5 Image">
+        </div>
+      </div>
+    -->
+
+      <!-- Last Row -->
+      <div class="row last-row">
+        <div class="text">
+          <h3>Final Notes</h3>
+          <p>When you delete your account all data will be removed and you won't be able to access them. The same Email can be used to create a new account. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const select = (el = "html") => document.querySelector(el);
+    // const maxMenuQuery = 1099.99;
+
+    //  const matchMenuQuery = window.matchMedia("(max-width: 1098.98px)")
+
+    const menuIcon = select(".menu-icon");
+
+    menuIcon.addEventListener("click", (e) => {
+      e.stopPropagation();
+      if (menuIcon.classList.contains("clicked")) {
+        menuIcon.classList.remove("clicked");
+      } else {
+        menuIcon.classList.add("clicked");
+      }
+    });
+  </script>
+</body>
+</html>
